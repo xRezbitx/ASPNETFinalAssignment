@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    int currentYear = DateTime.Now.Year;
+    int businessDuration = currentYear - 1994;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <img src="~/northwind.png" alt="Northwind Traders Logo" />
+    <p>Proudly distributing fine food products around the world for @businessDuration years.</p>
+</div>
